@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f4f1e8" />
+  <title>Little Poetry Machine</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <button class="text-button" id="addWordsButton">+ add words</button>
+      <div class="title">poem</div>
+      <button class="text-button" id="clearButton">clear</button>
+    </header>
+
+    <section class="canvas" id="canvas" aria-label="Poem canvas"></section>
+
+    <footer class="wordbank-wrap">
+      <div class="wordbank" id="wordbank" aria-label="Word bank"></div>
+    </footer>
+  </main>
+
+  <dialog id="wordDialog">
+    <form method="dialog" id="wordForm" class="dialog-card">
+      <div class="dialog-header">
+        <h2>add words</h2>
+        <button type="button" class="close-button" id="closeDialog" aria-label="Close">×</button>
+      </div>
+      <p>One word or phrase per line. Your additions are saved in this browser.</p>
+      <textarea id="wordInput" rows="9" placeholder="moon
+quiet
+beautiful
+again"></textarea>
+      <div class="dialog-actions">
+        <button type="button" class="text-button" id="resetCustomButton">remove my words</button>
+        <button type="submit" class="primary-button">add words</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -205,6 +205,6 @@ textarea:focus { border-color: rgba(41, 39, 36, .35); }
   .app { grid-template-rows: 52px 1fr auto; }
   .topbar { padding: 0 16px; }
   .wordbank-wrap { padding: 10px 12px 13px; }
-  .wordbank { max-height: 130px; gap: 6px; }
+  .wordbank { max-height: 200px; gap: 6px; }
   .tile { font-size: 13px; padding: 7px 9px 6px; }
 }
